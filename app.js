@@ -17,6 +17,7 @@ const reviewRouter = require('./routes/reviewRoutes');
 const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 // Start express app
 const app = express();
@@ -88,6 +89,8 @@ app.use(
     ],
   }),
 );
+
+app.use(compression());
 
 /*
 ^----------------------Test Middleware----------------------
