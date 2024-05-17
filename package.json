@@ -23,6 +23,7 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "core-js": "^3.37.0",
+    "cors": "^2.8.5",
     "esbuild": "0.20.2",
     "express": "^4.18.3",
     "express-mongo-sanitize": "^2.2.0",

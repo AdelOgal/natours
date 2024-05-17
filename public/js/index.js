@@ -6,6 +6,7 @@ import { login, logout } from './login.js';
 import { displayMap } from './leaflet.js';
 import { updateSettings } from './updateSettings.js';
 import { bookTour } from './stripe.js';
+import { signup } from './signup';
 
 //DOM ELEMENTS
 const leafLet = document.getElementById('map');
@@ -14,12 +15,24 @@ const logOutBtn = document.querySelector('.nav__el--logout');
 const userDataForm = document.querySelector('.form-user-data');
 const userPasswordForm = document.querySelector('.form-user-password');
 const bookBtn = document.getElementById('book-tour');
+const signupForm = document.querySelector('.form--signup');
 
 //DELEGATION
 if (leafLet) {
   const locations = JSON.parse(leafLet.dataset.locations);
 
   displayMap(locations);
+}
+
+if (signupForm) {
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('password-confirm').value;
+    signup(name, email, password, confirmPassword);
+  });
 }
 
 if (loginForm)
