@@ -22,14 +22,14 @@
 
 ## Deployed Version
 
-Live demo (Feel free to visit) 👉 : https://natours-u2q8.onrender.com/
+Live demo: https://natours-u2q8.onrender.com/
 
 ## Key Features
 
 - Authentication and Authorization
   - Sign-up, Login and logout
 - Tour
-  - Manage booking, check tours map, check user's reviews and ratings
+  - Manage booking, check tours map, check user's reviews and ratings (currently placeholder text)
 - User profile
   - Update username, profile photo, email, and password
 - Credit card payment using Stripe
@@ -47,8 +47,10 @@ Live demo (Feel free to visit) 👉 : https://natours-u2q8.onrender.com/
   - Card No. : 4242 4242 4242 4242
   - Expiry date: any
   - CVV: any
+  - Postal Code: any
+  - Country: any
+  - Card Holder Name: any
   ```
-- Finished!
 
 ### Manage your booking
 
@@ -110,7 +112,7 @@ go to dashboard > project > environment
 - [esbuild](https://esbuild.github.io/) - An extremely fast bundler for the web
 - [Stripe](https://stripe.com/) - Online payment API
 - [Postman](https://www.getpostman.com/) - API testing
-- [Mailtrap](https://mailtrap.io/) & [Mailgun](https://www.mailgun.com/) - Email delivery platform
+- [Mailtrap](https://mailtrap.io/) & [Brevo](https://www.brevo.com/) - Email delivery platform
 - [Render](https://render.com/) - Cloud platform
 
 ## Future Improvements
